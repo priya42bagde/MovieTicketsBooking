@@ -1,0 +1,94 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    width: 80vw;
+    max-width: 620;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: teal;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .review {
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+  }
+  
+  .img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .img-container .person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  .img-container .quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: turquoise;
+    color: wheat;
+    transform: translateY(25%);
+  }
+  .author {
+    margin-bottom: 0.25rem;
+  }
+  .job {
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+  .info {
+    margin-bottom: 0.75rem;
+  }
+  .prev-btn,
+  .next-btn {
+    color: teal;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.25rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: #aaaa;
+  }
+  .btn-random {
+    margin-top: 0.25rem;
+    background: #aaaa;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .btn-random:hover {
+    color: crimson;
+  }
