@@ -28,7 +28,7 @@ class TicketInfomation extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{backgroundColor:"skyblue"}}>
                 <div>
                     <button className="gheDuocChon"></button>
                     <span>SELECTED SEAT</span>

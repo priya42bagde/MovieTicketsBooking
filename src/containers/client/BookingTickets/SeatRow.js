@@ -43,9 +43,9 @@ class SeatRow extends Component {
     }
     render() {
         return (
-            <Fragment >
+            <div style={{backgroundColor:"lightcyan"}}>
                 <span className="seatRow">{this.renderSeatRowName()}</span>{this.renderSingleSeat()}
-            </Fragment>
+            </div>
         )
     }
 }

@@ -13,7 +13,7 @@ export default class BookingTickets extends Component {
     }
     render() {
         return (
-            <div className="background" style={{backgroundImage: "url(./img/background02.jpg), over"}} >
+            <div className="background" style={{backgroundColor:"lightcyan"}} >
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-8">

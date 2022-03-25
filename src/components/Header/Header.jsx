@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Header=()=> {
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-info">
         <Link className="navbar-brand" to="/">
           Movie Ticket Booking
         </Link>

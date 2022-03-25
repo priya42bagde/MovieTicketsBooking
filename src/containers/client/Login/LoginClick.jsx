@@ -22,7 +22,7 @@ const Form = () => {
 
   const { bankName, accNumber, IFSC, CVV } = paymentData;
 
-  return (<div class="payment">
+  return (<div class="payment" style={{backgroundColor: "lightcyan", height: "100vh",   textAlign: "center"}} >
     <h3>Login </h3><br/>
     <form className="submit" onSubmit={e => handleFormSubmit(e)}>
      <div>

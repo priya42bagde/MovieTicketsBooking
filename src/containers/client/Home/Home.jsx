@@ -28,7 +28,8 @@ const Home = () => {
   return (
     <div>
          <Banner /> 
-         <Filter /> 
+         <br/>
+        {/* <Filter /> */}
         <MovieList />
       </div>
   );

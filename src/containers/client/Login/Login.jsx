@@ -13,12 +13,11 @@ const Home = () => {
   + 'Please, go ahead and signup. Login instead, if you already have an account.');
 
   return (
-    <div >
-      <h1 >BOOKING TICKETS </h1>
+    <div style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
+      <h3>Would you like to SignIn or SignUp?</h3> <br/> <br/> <br/><br/>
       <div>
-      <Link to="/login/login">Login</Link>  <br/> 
-      <h2>Signup from below:</h2>
-      <Link to="/login/register">Register</Link>   
+      <Link to="/login/login"><h1>Login</h1></Link>  <br/> <br/><br/>
+      <Link to="/login/register"><h1>Register</h1></Link>   
       </div>
     </div>
   );
