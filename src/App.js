@@ -25,7 +25,6 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <h2>Movie Ticket Booking</h2>
         <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login/login" component={LoginClick} />
