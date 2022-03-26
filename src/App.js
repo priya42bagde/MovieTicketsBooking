@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <h2>Movie Ticket Booking</h2>
         <Header />
+        <h2>Movie Ticket Booking</h2>
         <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login/login" component={LoginClick} />
