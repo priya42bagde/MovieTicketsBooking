@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import signUp from './Login'
 
-
-const Form = () => {
+const RegisterClick = () => {
   const [paymentData, setpaymentData] = useState({
     bankName: "",
     accNumber: "",
@@ -22,8 +22,9 @@ const Form = () => {
 
   const { bankName, accNumber, IFSC, CVV } = paymentData;
 
-  return (<div class="payment" style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
-    <h3>Sigup </h3><br/>
+  return (<div  style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
+    <br/><h3>Sigup with your details</h3><br/>
+    {/*<img src={signUp} style={{height:"570px"}} />*/}
     <form className="submit" onSubmit={e => handleFormSubmit(e)}>
      <div>
       <input
@@ -59,10 +60,10 @@ const Form = () => {
         required
       /></div><br/>
 
-<input type="submit" value="Submit" />
+     <input type="submit" value="Submit" />
     </form>
     </div>
   );
 };
 
-export default Form;
+export default RegisterClick;

@@ -59,9 +59,7 @@ export default function Review() {
         <button className="next-btn" onClick={next}>
           <FaChevronRight />
         </button>
-        <button className="btn-random" onClick={random}>
-          sub
-        </button>
+
       </div>
     </article>
       </section>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 const Header=()=> {
-
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-info">
         <Link className="navbar-brand" to="/">
@@ -29,19 +28,17 @@ const Header=()=> {
               <Link className="nav-link" to="/about">
                 About
               </Link>
-            </li>
-            
+            </li>           
             <li className="nav-item">
               <Link className="nav-link" to="/payment">
-                Transactions
+                Transaction
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/review">
                 Review
               </Link>
-            </li>
-            
+            </li>           
             <li className="nav-item">
               <Link className="nav-link" to="/Login">
                 Login/Register

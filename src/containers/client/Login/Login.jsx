@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Home = () => {
+const Login = () => {
   const speak = msg => {
     const sp = new SpeechSynthesisUtterance(msg);
     [sp.voice] = speechSynthesis.getVoices();
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Login;
