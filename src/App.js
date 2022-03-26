@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Movie Ticket Booking</h2>
       <Router>
+      <h2>Movie Ticket Booking</h2>
         <Header />
         <Switch>
         <Route exact path="/" component={Home} />
