@@ -13,6 +13,7 @@ function App() {
       const { path, component, exact } = route;
       return (
         <Route 
+          key={path}
           path={path} 
           component={component} 
           exact={exact} 

@@ -1,42 +1,25 @@
-/*import React, { Component } from 'react'
-
-export default class Banner extends Component {
-    render() {
-        return (
-            <div>
-                Banner
-            </div>
-        )
-    }
-}*/
-
-
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import aa from "../Banner/carousal/aa.jpg"
-import b from "../Banner/carousal/b.jpg"
-import c from "../Banner/carousal/c.jpg"
+
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
 } from "reactstrap";
 
 const items = [
   {
-    src: c,
+    src: "/carousal/c.jpg",
     altText: "Slide 1",
     caption: "Slide 1"
   },
   {
-    src:b,
+    src:"/carousal/b.jpg",
      altText: "Slide 2",
     caption: "Slide 2"
   },
   {
-    src:aa,
+    src:"/carousal/aa.jpg",
      altText: "Slide 3",
     caption: "Slide 3"
   }
@@ -143,7 +126,7 @@ class Banner extends Component {
           key={item.src}
         >
           <img
-            style={{ width: "100%"}}
+            style={{ width: "100%", height: "50%"}}
             src={item.src}
             alt={item.altText}
             onTouchStart={e => this.handleTouch(e)}
@@ -157,7 +140,8 @@ class Banner extends Component {
     });
 
     return (
-      <Carousel
+      <div class="carousel">
+      <Carousel 
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
@@ -176,6 +160,7 @@ class Banner extends Component {
           onClickHandler={this.next}
         />
       </Carousel>
+      </div>
     );
   }
 }

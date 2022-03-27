@@ -53,6 +53,7 @@ export default function MovieDetail(props) {
                   aria-selected="true"
                 >
                   <img
+                    alt='images'
                     src={heThongRap.logo}
                     style={{ width: '50px', marginRight: '6px' }}
                   />

@@ -9,7 +9,7 @@ const Login = () => {
     speechSynthesis.speak(sp);
   };
   speak('Hello There, '
-  + 'You are welcome to Air Tickets! '
+  + 'You are welcome to Movie Booking Tickets! '
   + 'Please, go ahead and signup. Login instead, if you already have an account.');
 
   return (

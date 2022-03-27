@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should show the text 1`] = `"<BrowserRouter />"`;

@@ -1,5 +1,3 @@
-
-import { FaGithubSquare } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import React, { useState } from "react";
 import people from "./data";
@@ -9,6 +7,7 @@ import "./Review.scss";
 export default function Review() {
     const [index, setIndex] = useState(0);
     const { name, job, image, text } = people[index];
+  
     const next = () => {
       setIndex((index) => {
         let newIndex = index + 1;
@@ -23,18 +22,7 @@ export default function Review() {
         return newIndex;
       });
     };
-  
-    const random = () => {
-      let randomNumber = Math.floor(Math.random() * people.length);
-      if (randomNumber === index) {
-        randomNumber = index + 1;
-      }
-      setIndex((index) => {
-        if (randomNumber < 0) return people.length - 1;
-        if (randomNumber > people.length - 1) return 0;
-        return randomNumber;
-      });
-    };
+
   return (
     <main>
       <section className="container">
@@ -53,10 +41,10 @@ export default function Review() {
       <p className="job">{job}</p>
       <p className="info">{text}</p>
       <div className="btn-container">
-        <button className="prev-btn" onClick={prev}>
+        <button className="prev-btn" onClick={next}>
           <FaChevronLeft />
         </button>
-        <button className="next-btn" onClick={next}>
+        <button className="next-btn" onClick={prev}>
           <FaChevronRight />
         </button>
 

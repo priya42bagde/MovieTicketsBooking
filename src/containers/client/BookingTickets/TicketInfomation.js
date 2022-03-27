@@ -1,8 +1,6 @@
-import Button from 'components/Button/Button';
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { cancleTicketsAction } from '../redux/action/BookingTicketsAction';
-import history from './History';
 import { Link } from "react-router-dom";
 class TicketInfomation extends Component {
     renderInfo = () => {

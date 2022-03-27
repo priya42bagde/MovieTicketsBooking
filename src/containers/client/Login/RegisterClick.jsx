@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import signUp from './Login'
+
 
 const RegisterClick = () => {
   const [paymentData, setpaymentData] = useState({

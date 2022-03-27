@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import signIn from './Login';
 
 const LoginClick = () => {
   const [paymentData, setpaymentData] = useState({
     bankName: "",
-    accNumber: "",
     IFSC: "",
-    CVV: ""
   });
 
   const updatepaymentData = event =>
@@ -20,7 +17,7 @@ const LoginClick = () => {
         event.preventDefault();
       }
 
-  const { bankName, accNumber, IFSC, CVV } = paymentData;
+  const { bankName, IFSC } = paymentData;
 
   return (<div style={{backgroundColor: "lightcyan", height: "100vh",  textAlign:"center"}} >
     <br/><h3>Login with your credentials</h3><br/>
@@ -35,14 +32,7 @@ const LoginClick = () => {
         name="bankName"
         required
       /></div><br/>
-      {/*<div><input
-        value={accNumber}
-        onChange={e => updatepaymentData(e)}
-        placeholder="EmailId"
-        type="text"
-        name="accNumber"
-        required
-    /></div><br/>*/}
+    
       <div><input
         value={IFSC}
         onChange={e => updatepaymentData(e)}
@@ -51,14 +41,7 @@ const LoginClick = () => {
         name="IFSC"
         required
       /></div><br/>
-      {/*<div><input
-        value={CVV}
-        onChange={e => updatepaymentData(e)}
-        placeholder="Confirm Password"
-        type="CVV"
-        name="CVV"
-        required
-  /></div><br/>*/}
+    
 
       <input type="submit" value="Submit" />
     </form>

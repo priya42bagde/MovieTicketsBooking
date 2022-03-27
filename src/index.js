@@ -6,8 +6,9 @@ import 'popper.js/dist/umd/popper';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import store from 'store';
+//import store from 'store';
 import { Provider } from 'react-redux';
+import store from "../src/store/index"
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "lightcyan",
+    }
+  }
+>
+  <h1>
+     PageNotFound!!
+  </h1>
+</div>
+`;
+
+exports[`renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should show the text 1`] = `" PageNotFound!!"`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="spinner-border"
+  role="status"
+  style={
+    Object {
+      "height": "4rem",
+      "width": "4rem",
+    }
+  }
+>
+  <span
+    className="sr-only"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should show the text 1`] = `"Loading..."`;

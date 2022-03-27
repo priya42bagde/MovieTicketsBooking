@@ -1,25 +1,25 @@
-import App from './App';
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow, configure } from 'enzyme';
-
+import renderer from 'react-test-renderer'
+import Loader from './Loader'
 configure({adapter: new Adapter()});
 
+configure({adapter: new Adapter()});
 it("renders correctly", () => {
   const wrapper = shallow(
-    <App />
+    <Loader />
   );
   expect(wrapper).toMatchSnapshot();
 });
 
-it('renders the component', () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper.exists()).toBe(true);
+it('renders a snapshot', () => {
+  const tree = renderer.create(<Loader/>).toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
 it('should show the text', () => {
-    const toggleInstance = shallow(<App />);
-    const element = toggleInstance.find('div');
+    const toggleInstance = shallow(<Loader />);
+    const element = toggleInstance.find('div span');
     expect(element.text()).toMatchSnapshot();
    });

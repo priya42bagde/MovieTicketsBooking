@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  class="payment"
+>
+  <h3>
+    Provide data to make payment 
+  </h3>
+  <br />
+  <form
+    className="submit"
+    onSubmit={[Function]}
+  >
+    <div>
+      <input
+        name="bankName"
+        onChange={[Function]}
+        placeholder="Bank Name"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <input
+        name="accNumber"
+        onChange={[Function]}
+        placeholder="Account Number"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <input
+        name="IFSC"
+        onChange={[Function]}
+        placeholder="IFSC address"
+        required={true}
+        type="IFSC"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <input
+        name="CVV"
+        onChange={[Function]}
+        placeholder="CVV"
+        required={true}
+        type="CVV"
+        value=""
+      />
+    </div>
+    <br />
+    <input
+      type="submit"
+      value="Submit"
+    />
+  </form>
+</div>
+`;
+
+exports[`renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should show the text 1`] = `"Provide data to make payment "`;

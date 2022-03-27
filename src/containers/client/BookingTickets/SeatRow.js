@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bookingTicketsAction } from '../redux/action/BookingTicketsAction';
 
