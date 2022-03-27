@@ -10,6 +10,7 @@ exports[`renders a snapshot 1`] = `
   <br />
   <form
     className="submit"
+    id="btn"
     onSubmit={[Function]}
   >
     <div>
@@ -56,14 +57,15 @@ exports[`renders a snapshot 1`] = `
       />
     </div>
     <br />
-    <input
+    <button
+      id="submit"
       type="submit"
       value="Submit"
-    />
+    >
+      Submit
+    </button>
   </form>
 </div>
 `;
 
 exports[`renders correctly 1`] = `ShallowWrapper {}`;
-
-exports[`should show the text 1`] = `"Provide data to make payment "`;

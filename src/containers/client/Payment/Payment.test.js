@@ -18,8 +18,9 @@ it('renders a snapshot', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('should show the text', () => {
-    const toggleInstance = shallow(<Payment />);
-    const element = toggleInstance.find('div h3');
-    expect(element.text()).toMatchSnapshot();
-   });
+it('should render button', () => {
+  const wrapper = shallow(<Payment />)
+  const buttonElement  = wrapper.find('#submit');
+  expect(buttonElement).toHaveLength(1);
+  expect(buttonElement.text()).toEqual('Submit');
+})

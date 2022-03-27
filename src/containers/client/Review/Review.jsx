@@ -27,7 +27,7 @@ export default function Review() {
     <main>
       <section className="container">
         <div className="title">
-          <h2> Our review </h2>
+          <h2 className="title1"> Our review </h2>
           <div className="underline"></div>
         </div>
         <article className="review">
@@ -42,7 +42,7 @@ export default function Review() {
       <p className="info">{text}</p>
       <div className="btn-container">
         <button className="prev-btn" onClick={next}>
-          <FaChevronLeft />
+          <FaChevronLeft /> 
         </button>
         <button className="next-btn" onClick={prev}>
           <FaChevronRight />

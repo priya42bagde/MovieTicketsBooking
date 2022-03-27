@@ -8,7 +8,9 @@ exports[`renders a snapshot 1`] = `
     <div
       className="title"
     >
-      <h2>
+      <h2
+        className="title1"
+      >
          Our review 
       </h2>
       <div

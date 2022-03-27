@@ -24,7 +24,7 @@ const Form = () => {
 
   return (<div class="payment">
     <h3>Provide data to make payment </h3><br/>
-    <form className="submit" onSubmit={e => handleFormSubmit(e)}>
+    <form className="submit" onSubmit={e => handleFormSubmit(e)} id="btn">
      <div>
       <input
         value={bankName}
@@ -59,7 +59,7 @@ const Form = () => {
         required
       /></div><br/>
 
-<input type="submit" value="Submit" />
+<button id="submit" type="submit" value="Submit" >Submit</button>
     </form>
     </div>
   );

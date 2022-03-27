@@ -18,3 +18,21 @@ it('renders a snapshot', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('should render button', () => {
+  const wrapper = shallow(<Review />)
+  const buttonElement  = wrapper.find('.title1');
+  expect(buttonElement).toHaveLength(1);
+  expect(buttonElement.text()).toEqual(' Our review ');
+})
+
+it('should render button', () => {
+  const wrapper = shallow(<Review />)
+  const buttonElement  = wrapper.find('.prev-btn');
+  buttonElement.simulate('click');
+})
+
+it('should render button', () => {
+  const wrapper = shallow(<Review />)
+  const buttonElement  = wrapper.find('.next-btn');
+  buttonElement.simulate('click');
+})

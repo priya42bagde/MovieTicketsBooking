@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default class MovieItem extends Component {
   render() {
     const { tenPhim, hinhAnh, maPhim } = this.props.movie;
-
     return (
       <div className="col-3" style={{ marginBottom: '20px' }}>
         <div className="card" style={{ backgroundColor: "white"}}>
