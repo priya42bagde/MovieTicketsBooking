@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import c from "./carousal/c.jpg"
+import b from "./carousal/b.jpg"
+import aa from "./carousal/aa.jpg"
 import {
   Carousel,
   CarouselItem,
@@ -9,17 +11,17 @@ import {
 
 const items = [
   {
-    src: "/carousal/c.jpg",
+    src: c,
     altText: "Slide 1",
     caption: "Slide 1"
   },
   {
-    src:"/carousal/b.jpg",
+    src:b,
      altText: "Slide 2",
     caption: "Slide 2"
   },
   {
-    src:"/carousal/aa.jpg",
+    src:aa,
      altText: "Slide 3",
     caption: "Slide 3"
   }
@@ -148,13 +150,11 @@ class Banner extends Component {
         interval={false}
       >
         {slides}
-        <label htmlFor="Previous">Previous</label>
         <CarouselControl id="CarouselControl1"
           direction="prev"
           directionText="Previous"
           onClickHandler={this.previous}
         />
-        <label htmlFor="Next">Next</label>
         <CarouselControl id="CarouselControl2"
           direction="next"
           directionText="Next"
