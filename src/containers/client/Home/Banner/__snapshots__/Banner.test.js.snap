@@ -1,3 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders a snapshot 1`] = `
+<div
+  class="carousel"
+>
+  <div
+    className="carousel slide"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="carousel-item active"
+      >
+        <img
+          alt="Slide 1"
+          onDragEnd={[Function]}
+          onDragStart={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          src="/carousal/c.jpg"
+          style={
+            Object {
+              "height": "50%",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="Slide 2"
+          onDragEnd={[Function]}
+          onDragStart={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          src="/carousal/b.jpg"
+          style={
+            Object {
+              "height": "50%",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="Slide 3"
+          onDragEnd={[Function]}
+          onDragStart={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          src="/carousal/aa.jpg"
+          style={
+            Object {
+              "height": "50%",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <label
+      htmlFor="Previous"
+    >
+      Previous
+    </label>
+    <a
+      className="carousel-control-prev"
+      onClick={[Function]}
+      role="button"
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+      tabIndex="0"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-prev-icon"
+      />
+      <span
+        className="visually-hidden"
+      >
+        Previous
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
 exports[`renders correctly 1`] = `ShallowWrapper {}`;

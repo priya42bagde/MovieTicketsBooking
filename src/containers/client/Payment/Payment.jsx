@@ -24,9 +24,10 @@ const Form = () => {
 
   return (<div class="payment">
     <h3>Provide data to make payment </h3><br/>
-    <form className="submit" onSubmit={e => handleFormSubmit(e)} id="btn">
+    <form class="submit" onSubmit={e => handleFormSubmit(e)} id="btn">
      <div>
-      <input
+     <label htmlFor="InputValue">Bank Name</label><br/>
+      <input id="InputValue" label="Message"
         value={bankName}
         onChange={e => updatepaymentData(e)}
         placeholder="Bank Name"
@@ -34,7 +35,9 @@ const Form = () => {
         name="bankName"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="InputValue2">Account Number</label><br/>
+        <input id="InputValue2"
         value={accNumber}
         onChange={e => updatepaymentData(e)}
         placeholder="Account Number"
@@ -42,7 +45,9 @@ const Form = () => {
         name="accNumber"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="InputValue3">IFSC</label><br/>
+        <input id="InputValue3"
         value={IFSC}
         onChange={e => updatepaymentData(e)}
         placeholder="IFSC address"
@@ -50,7 +55,9 @@ const Form = () => {
         name="IFSC"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="InputValue4">CVV</label><br/>
+        <input id="InputValue4"
         value={CVV}
         onChange={e => updatepaymentData(e)}
         placeholder="CVV"

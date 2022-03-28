@@ -148,13 +148,14 @@ class Banner extends Component {
         interval={false}
       >
         {slides}
-
-        <CarouselControl
+        <label htmlFor="Previous">Previous</label>
+        <CarouselControl id="CarouselControl1"
           direction="prev"
           directionText="Previous"
           onClickHandler={this.previous}
         />
-        <CarouselControl
+        <label htmlFor="Next">Next</label>
+        <CarouselControl id="CarouselControl2"
           direction="next"
           directionText="Next"
           onClickHandler={this.next}

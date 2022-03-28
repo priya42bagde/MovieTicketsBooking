@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a snapshot 1`] = `
+exports[`renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`renders snapshot 1`] = `
 <div
   class="payment"
 >
@@ -9,12 +11,19 @@ exports[`renders a snapshot 1`] = `
   </h3>
   <br />
   <form
-    className="submit"
+    class="submit"
     id="btn"
     onSubmit={[Function]}
   >
     <div>
+      <label
+        htmlFor="InputValue"
+      >
+        Bank Name
+      </label>
       <input
+        id="InputValue"
+        label="Message"
         name="bankName"
         onChange={[Function]}
         placeholder="Bank Name"
@@ -25,7 +34,13 @@ exports[`renders a snapshot 1`] = `
     </div>
     <br />
     <div>
+      <label
+        htmlFor="InputValue2"
+      >
+        Account Number
+      </label>
       <input
+        id="InputValue2"
         name="accNumber"
         onChange={[Function]}
         placeholder="Account Number"
@@ -36,7 +51,13 @@ exports[`renders a snapshot 1`] = `
     </div>
     <br />
     <div>
+      <label
+        htmlFor="InputValue3"
+      >
+        IFSC
+      </label>
       <input
+        id="InputValue3"
         name="IFSC"
         onChange={[Function]}
         placeholder="IFSC address"
@@ -47,7 +68,13 @@ exports[`renders a snapshot 1`] = `
     </div>
     <br />
     <div>
+      <label
+        htmlFor="InputValue4"
+      >
+        CVV
+      </label>
       <input
+        id="InputValue4"
         name="CVV"
         onChange={[Function]}
         placeholder="CVV"
@@ -67,5 +94,3 @@ exports[`renders a snapshot 1`] = `
   </form>
 </div>
 `;
-
-exports[`renders correctly 1`] = `ShallowWrapper {}`;

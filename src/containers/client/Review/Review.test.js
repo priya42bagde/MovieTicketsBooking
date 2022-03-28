@@ -5,7 +5,6 @@ import renderer from 'react-test-renderer'
 import Review from './Review'
 configure({adapter: new Adapter()});
 
-configure({adapter: new Adapter()});
 it("renders correctly", () => {
   const wrapper = shallow(
     <Review />

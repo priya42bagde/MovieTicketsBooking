@@ -1,5 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders a snapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "lightcyan",
+      "height": "100vh",
+      "textAlign": "center",
+    }
+  }
+>
+  <br />
+  <h3>
+    Sigup with your details
+  </h3>
+  <br />
+  <form
+    class="submit"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="UserId"
+      >
+        UserId
+      </label>
+      <input
+        id="UserId"
+        name="bankName"
+        onChange={[Function]}
+        placeholder="UserId"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <label
+        htmlFor="EmailId"
+      >
+        EmailId
+      </label>
+      <input
+        id="EmailId"
+        name="accNumber"
+        onChange={[Function]}
+        placeholder="EmailId"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <label
+        htmlFor="Password"
+      >
+        Password
+      </label>
+      <input
+        id="Password"
+        name="IFSC"
+        onChange={[Function]}
+        placeholder="Password"
+        required={true}
+        type="IFSC"
+        value=""
+      />
+    </div>
+    <br />
+    <div>
+      <label
+        htmlFor="ConfirmPassword"
+      >
+        Confirm Password
+      </label>
+      <input
+        id="ConfirmPassword"
+        name="CVV"
+        onChange={[Function]}
+        placeholder="Confirm Password"
+        required={true}
+        type="CVV"
+        value=""
+      />
+    </div>
+    <br />
+    <input
+      type="submit"
+      value="Submit"
+    />
+  </form>
+</div>
+`;
+
 exports[`renders correctly 1`] = `ShallowWrapper {}`;
 
 exports[`should show the text 1`] = `"Sigup with your details"`;

@@ -22,9 +22,10 @@ const LoginClick = () => {
   return (<div style={{backgroundColor: "lightcyan", height: "100vh",  textAlign:"center"}} >
     <br/><h3>Login with your credentials</h3><br/>
     {/*<img src={signIn} style={{height:"570px"}} />*/}
-    <form className="submit" onSubmit={e => handleFormSubmit(e)}>
+    <form class="submit" onSubmit={e => handleFormSubmit(e)}>
      <div>
-      <input
+     <label htmlFor="UserId">UserId</label> <br/>
+      <input id="UserId"
         value={bankName}
         onChange={e => updatepaymentData(e)}
         placeholder="UserId"
@@ -33,7 +34,9 @@ const LoginClick = () => {
         required
       /></div><br/>
     
-      <div><input
+      <div>
+      <label htmlFor="Password">Password</label> <br/>
+      <input id="Password"
         value={IFSC}
         onChange={e => updatepaymentData(e)}
         placeholder="Password"
@@ -41,8 +44,6 @@ const LoginClick = () => {
         name="IFSC"
         required
       /></div><br/>
-    
-
       <input type="submit" value="Submit" />
     </form>
     </div>

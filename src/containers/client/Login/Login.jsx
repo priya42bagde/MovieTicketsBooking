@@ -8,10 +8,8 @@ const Login = () => {
     [sp.voice] = speechSynthesis.getVoices();
     speechSynthesis.speak(sp);
   };
-  speak('Hello There, '
-  + 'You are welcome to Movie Booking Tickets! '
-  + 'Please, go ahead and signup. Login instead, if you already have an account.');
-
+  speak('Hello There, ' + 'You are welcome to Movie Booking Tickets! ' + 'Please, go ahead and signup. Login instead, if you already have an account.');
+  
   return (
     <div style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
       <h3>Would you like to SignIn or SignUp?</h3> <br/> <br/> <br/><br/>

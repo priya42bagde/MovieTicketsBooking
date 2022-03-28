@@ -25,9 +25,10 @@ const RegisterClick = () => {
   return (<div  style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
     <br/><h3>Sigup with your details</h3><br/>
     {/*<img src={signUp} style={{height:"570px"}} />*/}
-    <form className="submit" onSubmit={e => handleFormSubmit(e)}>
+    <form class="submit" onSubmit={e => handleFormSubmit(e)}>
      <div>
-      <input
+     <label htmlFor="UserId">UserId</label><br/>
+      <input id="UserId"
         value={bankName}
         onChange={e => updatepaymentData(e)}
         placeholder="UserId"
@@ -35,7 +36,9 @@ const RegisterClick = () => {
         name="bankName"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="EmailId">EmailId</label><br/>
+        <input id="EmailId"
         value={accNumber}
         onChange={e => updatepaymentData(e)}
         placeholder="EmailId"
@@ -43,7 +46,9 @@ const RegisterClick = () => {
         name="accNumber"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="Password">Password</label><br/>
+        <input id="Password"
         value={IFSC}
         onChange={e => updatepaymentData(e)}
         placeholder="Password"
@@ -51,7 +56,9 @@ const RegisterClick = () => {
         name="IFSC"
         required
       /></div><br/>
-      <div><input
+      <div>
+      <label htmlFor="ConfirmPassword">Confirm Password</label><br/>
+        <input id="ConfirmPassword"
         value={CVV}
         onChange={e => updatepaymentData(e)}
         placeholder="Confirm Password"
