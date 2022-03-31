@@ -23,7 +23,7 @@ const RegisterClick = () => {
   const { bankName, accNumber, IFSC, CVV } = paymentData;
 
   return (<div  style={{backgroundColor: "lightcyan", height: "100vh", textAlign: "center"}} >
-    <br/><h3>Sigup with your details</h3><br/>
+    <br/><h3>Signup with your details</h3><br/>
     {/*<img src={signUp} style={{height:"570px"}} />*/}
     <form class="submit" onSubmit={e => handleFormSubmit(e)}>
      <div>
